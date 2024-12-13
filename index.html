@@ -1,0 +1,300 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaruBytes</title>
+ 	
+<style>
+        body {
+            font-family: 'Copperplate', fantasy;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: #f0f0f0;
+            overflow-x: hidden; /* Prevents horizontal scrolling */
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 15px;
+            background: rgba(70, 0, 50, 0.9);
+        }
+
+        header h1 {
+            font-size: 60px;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 30, 50, 0.9);
+            padding: 8px;
+        }
+
+        nav a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 21px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        section {
+            padding: 30px;
+            text-align: center;
+            color: #333;
+            position: relative;
+            z-index: 2;
+            margin-bottom: 150px; /* To prevent overlap with footer */
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: rgba(50, 0, 70, 1);
+            position: sticky; /* Keeps it at the bottom but doesn't overlap content */
+            width: 100%;
+            bottom: 0;
+            z-index: 3; /* Ensures the footer stays on top of other content */
+        }
+
+        footer p {
+            font-size: 18px;
+            margin: 5px 0;
+            color: white;
+        }
+
+	footer a {
+            color: white;
+        }
+
+
+        .highlight {
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .carousel-container {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carousel {
+            display: flex;
+            flex-direction: column;
+            animation: slide 10s infinite linear;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-50%);
+            }
+            100% {
+                transform: translateY(-100%);
+            }
+        }
+
+        .full-background-block {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4); /* Transparent overlay */
+            z-index: 1;
+        }
+
+        .description-block {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 30px;
+            z-index: 2; /* Ensure the text is on top */
+            color: black ;
+            text-align: center;
+        }
+
+        .description-block p {
+            white-space: nowrap; /* Prevents text from wrapping */
+        }
+
+        .explore-text {
+            font-size: 18px;
+            margin: 30px 0;
+            text-align: center;
+            color: black;
+        }
+
+        /* Styling for portfolio blocks */
+        .portfolio-blocks {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 5px;
+            padding: 0 20px;
+	    
+        }
+
+        .portfolio-block {
+            background-color: rgba(70, 0, 50, 0.9);
+            padding: 10px;
+            border-radius: 25px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+
+	        
+}
+
+        .portfolio-block h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        
+}
+
+        .portfolio-block p {
+            font-size: 20px;
+            margin: 0;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <header>
+        <h1>MaruBytes</h1>
+        <p>Welcome to my portfolio showcasing all the work completed during the CIS1102N course. Explore my projects!</p>
+<p>Nibble into Knowledge!</p>
+    </header>
+
+    <nav>
+        <a href="PORT1.html"><span class="highlight">Portfolio 1</span></a>
+        <a href="PORT2.html"><span class="highlight">Portfolio 2</span></a>
+        <a href="PORT3.html"><span class="highlight">Portfolio 3</span></a>
+        <a href="PORT4.html"><span class="highlight">Portfolio 4</span></a>
+        <a href="PORT5.html"><span class="highlight">Portfolio 5</span></a>
+        <a href="PORT6.html"><span class="highlight">Portfolio 6</span></a>
+        <a href="ABOUT.html"><span class="highlight">About Me</span></a>
+    </nav>
+
+    <!-- Carousel Section -->
+    <div class="carousel-container">
+        <div class="full-background-block"></div>
+        <div class="carousel">
+            <img src="CS1.jpg" alt="Image 1">
+            <img src="CS2.jpg" alt="Image 2">
+            <img src="CS3.jpg" alt="Image 3">
+            <img src="CS4.jpg" alt="Image 4">
+            <img src="CS5.jpg" alt="Image 5">
+            <img src="CS6.jpg" alt="Image 6">
+	    <img src="CS7.webp" alt="Image 7">
+            <img src="CS8.jpg" alt="Image 8">
+            <img src="CS9.jpg" alt="Image 9">
+        </div>
+
+        <div class="description-block">
+            <p>
+                <span class="highlight">WELCOME TO THE WEBSITE WHERE KNOWLEDGE IS KING!!</span>
+            </p>
+
+            <p>
+                <span class="highlight">Feel free to explore my portfolios and learn more about the work I've done during the CIS1102N course.</span>
+            </p>
+
+            <p class="explore-text">        
+                <span class="highlight">Thank you for visiting! Click the links above to dive into my projects and explore the variety of work I've put together. Enjoy your time here!</span>
+            </p>
+
+
+<!-- Portfolio Explanation Blocks -->
+<div class="portfolio-blocks">
+                <div class="portfolio-block">
+                    <h3>Portfolio 1</h3>
+<p>Computer Science as Discipline, Computing <br>Disciplines and Majors</p>
+                </div>
+                
+
+		<div class="portfolio-block">
+                    <h3>Portfolio 2</h3>
+<p>Data, Information, and Information Systems</p>
+                </div>
+                
+		<div class="portfolio-block">
+                    <h3>Portfolio 3</h3>
+<p>Number Systems</p>
+                </div>
+                
+		<div class="portfolio-block">
+                    <h3>Portfolio 4</h3>
+                    
+<p>Computer Hardware and Software: Their <br>Implementation in the different Institutions <br>in the Community</p>
+                </div>
+                
+		<div class="portfolio-block">
+                    <h3>Portfolio 5</h3>
+                    
+<p>Comparative Study On Different Types Of Motherboards</p>
+                </div>
+                
+		<div class="portfolio-block">
+                    <h3>Portfolio 6</h3>
+                    
+<p>Comparative Study on Different Types of Computers</p>
+                </div>
+            </div>
+        </div>
+
+
+        
+
+    </div>
+
+    
+
+
+
+    <footer>
+        <p>&copy; 2024 Tamayo T. Maruyama | CIS1102 Portfolio Hub</p>
+        <p>
+		Contact: 
+		<a href="mailto:24104227@usc.edu.ph">
+			24104227@usc.edu.ph
+		</a>
+		</p>
+    </footer>
+
+</body>
+</html>

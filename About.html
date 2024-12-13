@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - MaruBytes</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+
+        /* Carousel Styling */
+        .carousel {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        .carousel img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            opacity: 0;
+            animation: fade 15s infinite;
+        }
+
+        .carousel img:nth-child(1) { animation-delay: 0s; }
+        .carousel img:nth-child(2) { animation-delay: 5s; }
+        .carousel img:nth-child(3) { animation-delay: 10s; }
+
+        @keyframes fade {
+            0%, 100% { opacity: 0; }
+            33%, 66% { opacity: 1; }
+        }
+
+        /* Page Content Styling */
+        .content {
+            position: relative;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        /* Highlight and border styling */
+        .highlight {
+            background-color: rgba(0, 255, 255, 0.5); /* Opaque cyan blue */
+            border: 4px solid #00008b; /* Dark blue border */
+            padding: 5px; /* Space between text and border */
+            border-radius: 6px; /* Optional: rounded corners */
+        }
+
+        /* About Me Section */
+        .about-me {
+            display: flex;
+            align-items: center; /* Align items vertically */
+            margin: 20px auto;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            max-width: 800px;
+            text-align: left;
+        }
+
+        h2 {
+            color: #ff9800;
+            margin-bottom: 10px;
+        }
+
+        .profile-pic {
+            width: 140px;
+            height: 140px;
+            margin: 20px;
+            background: #fff;
+            border-radius: 50%; /* Circular shape */
+            overflow: hidden;
+            flex-shrink: 0; /* Prevent shrinking */
+        }
+
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Biography Box */
+        .biography {
+            margin: 20px auto;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            max-width: 800px;
+            text-align: left;
+        }
+
+        /* Additional Boxes Section */
+        .additional-boxes {
+            margin: 20px auto;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            max-width: 800px;
+            text-align: left;
+        }
+
+        /* Contact Information Section */
+        .contact-info {
+            margin: 20px auto;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            max-width: 800px;
+            text-align: left;
+        }
+
+        .contact-info a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Return to Homepage Link */
+        .homepage-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto;
+            padding: 10px;
+            max-width: 200px;
+            background: #00bcd4;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .homepage-link:hover {
+            background: #0097a7;
+        }
+
+        .homepage-link img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Background Carousel -->
+    <div class="carousel">
+        <img src="hatsune.jpg" alt="Background 1">
+        <img src="pika.jpg" alt="Background 2">
+        <img src="hatsune.jpg" alt="Background 3">
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <h1><span class="highlight">Welcome to MaruBytes</span></h1>
+
+        <!-- About Me Section -->
+        <div class="about-me">
+            <h2>Who I Am</h2>
+            <div class="profile-pic">
+                <img src="pfp.png" alt="Profile Picture">
+            </div>
+            <p>Hello! I'm Tamayo T. Maruyama, a passionate BS Computer Science student at the University of San Carlos. I'm eager to learn and tackle challenges while balancing academic performance and personal growth. And yes, I may occasionally procrastinate.......... EHEH I always get the work done—eventually! 😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄</p>
+        </div>
+
+        <!-- Biography Box -->
+        <div class="biography">
+            <h2>Biography</h2>
+            <p>I’ve always been fascinated by intricate patterns, logic, and technology, which led me to pursue Computer Science. My curiosity and determination have helped me achieve some significant milestones. I'm a Gold Medalist in the 2024 Hong Kong International Mathematical Olympiad, and I’ve also bagged awards like:</p>
+            <ul>
+                <li>Silver in the 2024 Philippines International Mathematical Olympiad</li>
+                <li>Silver in the Final Round of the Thailand International Mathematical Olympiad</li>
+                <li>Silver in the Heat Round of the Thailand International Mathematical Olympiad</li>
+                <li>Silver in the 2023 Heat Round of the Philippine International Mathematical Olympiad</li>
+            </ul>
+            <p>...and many more. It’s safe to say math and I are on pretty good terms, even if it sometimes feels like we’re in a complicated relationship. 😅 On top of my love for math, I also received the Best Paper Award in Journalism of Science and Technology. Who knew I could write about tech as well as I can solve equations? 🎤💻</p>
+            <p>I'm excited to use my skills to contribute to the tech world and hopefully build something that will change it—one algorithm at a time.</p>
+        </div>
+
+        <!-- Additional Boxes Section -->
+        <div class="additional-boxes">
+            <h2>My Interests</h2>
+            <p>I have a fascination with the intricate patterns in nature, mathematics, and technology. It's incredible how everything connects in the grand scheme of things—it's like the universe is one giant, beautiful equation! When I’m not lost in numbers, I like to indulge in some of life's simple pleasures... like eating. And of course, my favorite hobby is sleeping, even though I get barely any of it. 😴 Aaaaand yes, I often find myself staring longingly at my bed thinking... overthinking LOL.</p>
+            <p>I also enjoy playing games, watching series, or just gaming my heart out 🚀. However, let's be real, I’m still learning coding and, well, let’s say I'm not exactly there yet—but hey, I’m trying, and that’s what matters, right? I might fail a lot, but the key is to fail forward, one error at a time! 😂</p>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div class="contact-info">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:24104227@usc.edu.ph">24104227@usc.edu.ph</a></p>
+            <p>Email: <a href="mailto:maruyama.tamayo@gmail.com">maruyama.tamayo@gmail.com</a></p>
+            <p>Phone: +63 993 481 8839</p>
+        </div>
+
+        <!-- Return to Homepage -->
+        <a href="index.html" class="homepage-link">
+            <img src="home.jpg" alt="Home Icon">
+            Return to Homepage
+        </a>
+    </div>
+</body>
+</html>
